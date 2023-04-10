@@ -1,9 +1,10 @@
 {
   "dependencies": {
+    "@expo/webpack-config": "^18.0.1",
     "expo": "^48.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.71.3",
+    "react-native": "0.71.6",
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
@@ -13,10 +14,10 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "start": "expo start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "NODE_OPTIONS=--openssl-legacy-provider expo start --web"
   },
   "version": "1.0.0",
   "private": true,
